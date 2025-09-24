@@ -19,7 +19,7 @@ public class Appointment implements Serializable {
 
     @Override
     public String toString(){
-        DateTimeFormatter format = DateTimeFormatter.ofPattern("mm/dd/yyyy HH:ss");
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm");
 
         return "Time: " + time.format(format) + " -- Type: " + type + " -- " + " -- Notes: " + notes;
     }

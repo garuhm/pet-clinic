@@ -148,9 +148,9 @@ public class PetCareScheduler {
         LocalDateTime time = null;
         while(true){
             try{
-                System.out.println("Date and time? please enter in format MM/dd/yy HH:ss, with hours ranging from 00 - 23");
+                System.out.println("Date and time? please enter in format MM/dd/yy HH:mm, with hours ranging from 00 - 23");
                 String inputTime = sc.nextLine();
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yy HH:ss");
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yy HH:mm");
                 time = LocalDateTime.parse(inputTime, formatter);
                 break;
             } catch (DateTimeParseException e){
